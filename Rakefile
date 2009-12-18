@@ -11,6 +11,14 @@ begin
     gem.authors = ["Opscode, Inc."]
 
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
+    gem.files = [
+      "LICENSE",
+      "NOTICE",
+      "Rakefile",
+      "README.rdoc",
+      "VERSION.yml"
+    ]
+    gem.files.include %w{ features/**/* lib/**/* spec/**/* }
   end
 rescue LoadError
   puts "Jeweler (or a dependency) not available. Install it with: sudo gem install gemcutter jeweler (installs jeweler from gemcutter)"
